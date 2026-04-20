@@ -4,10 +4,8 @@ export const DebounceFun = (fn, delay) => {
         if(timer){
             clearTimeout(timer)
         }
-
         timer = setTimeout(() => {
-            fn.call(this, args)
-        })
+            fn.apply(this, args)
+        }, delay)
     } 
-
 }
