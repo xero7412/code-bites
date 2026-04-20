@@ -1,9 +1,21 @@
 import React from 'react';
+// import DebounceFn from '../Utils/debounce';
 
 const AutoComplete = () => {
-    return <div>
+
+    // const debouncedInput = new DebounceFn();
+
+    console.log('here',debouncedInput)
+
+    //https://dummyjson.com/products/search?q=phone 
+
+    return (<div>
+
         auto complete
-    </div>
+        <br/>
+
+        <input  placeholder="type here" onChane={e} />
+    </div>)
 }
 
 export default AutoComplete;
