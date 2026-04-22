@@ -19,6 +19,7 @@ const AutoscaleInput = () => {
     }
 
     const handleDocumentClick = (e) => {
+        console.log(containerRef.current, e.target)
         if(containerRef.current.contains(e.target)){
             inputRef.current.focus();
             setInputFocused(true)
@@ -58,7 +59,11 @@ const AutoscaleInput = () => {
             }}
             
             />
-            <div tabIndex={0} className="container" onClick={handleOnClickContainer} ref={containerRef} 
+            <div  
+            className="container" 
+            onClick={handleOnClickContainer} 
+            ref={containerRef}
+            style={{backgroundColor: isInputFocused && 'coral'}}
              >
                 <span style={{
                     fontSize: inputText.length > 10 ? '20px': '30px',
