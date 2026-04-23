@@ -15,8 +15,6 @@ const VirtualisedList = () => {
     const [feed, setFeed] = useState(Array.from({length: 1000}, (a,i) => i+1));
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    
-
     const ITEM_HEIGHT = 50 + 10;
     const CONTAINER_HEIGHT = 500;
     const SCROLLER_HEIGHT = ITEM_HEIGHT * feed.length;
