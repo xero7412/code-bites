@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import WebSocket from './Components/WebSocket-Polling'
+import InfiniteScroll from './Components/InfiniteScroll'
 import './App.css'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <WebSocket />
+      <InfiniteScroll />
     </>
   )
 }
